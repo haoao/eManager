@@ -1,0 +1,42 @@
+<ion-view view-title="新建项目">
+    <ion-nav-buttons side="right">
+        <a class="button button-clear" ng-click="">完成</a>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="left" >
+        <a class="button button-clear" ui-sref="tab.work-projectList">取消</a>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list type="inset-list">
+            <ion-item>
+                <label class="item item-input">
+                    <input type="text" placeholder="项目名称">
+                </label>
+            </ion-item>
+            <ion-item>
+                <label class="item item-input item-icon-right">
+                    所有者
+                    <i class="icon">
+                        <span class="item-note item-icon-right">
+                          个人项目<i class="icon ion-chevron-right icon-accessory"></i>
+                        </span>
+                    </i>
+                </label>
+
+                <ion-toggle toggle-class="toggle-positive">可见性
+                    <span class="item-note">
+                      私有
+                    </span>
+                </ion-toggle>
+            </ion-item>
+            <ion-item>
+                <label class="item item-input item-icon-right">
+                    <img ng-src="img/IMG_3872.JPG" width="44" height="44">冯浩
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+                </label>
+                <label class="item item-input">
+                    <a  class="button button-clear" ><i class="icon ion-plus-circled positive"></i>    添加成员</a>
+                </label>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

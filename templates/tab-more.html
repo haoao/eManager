@@ -1,0 +1,57 @@
+<ion-view view-title="更多">
+  <ion-content class="no-padding">
+    <div class="list">
+      <div class="item item-divider">帐号</div>
+
+      <div class="item item-icon-left item-button-right" >
+        <i class="icon ion-ios-person"></i>
+        已登录
+        <button class="button button-positive" ng-click="">退出</button>
+      </div>
+      <div class="item item-icon-left item-button-right">
+        <i class="icon ion-ios-person-outline"></i>
+        暂未登录
+        <button class="button button-positive" ng-click="">登录</button>
+      </div>
+
+      <div class="item item-divider">功能（需要登录）</div>
+      <div class="item">
+        上次备份：
+      </div>
+      <div class="item item-icon-left item-button-right">
+        <i class="icon ion-ios-cloud-upload-outline"></i>
+        数据备份到云端
+        <button class="button button-positive" ng-click="">备份</button>
+      </div>
+      <div class="item item-icon-left item-button-right">
+        <i class="icon ion-ios-cloud-download-outline"></i>
+        从云端还原数据
+        <button class="button button-positive" ng-click="">还原</button>
+      </div>
+      <div class="item item-icon-left item-button-right">
+        <i class="icon ion-ios-chatbubble-outline"></i>
+        im
+        <button class="button button-positive" ng-click="goIm()">im</button>
+      </div>
+
+      <div class="item item-divider">其他</div>
+      <div class="item item-icon-left" ng-click="feedback()">
+        <i class="icon ion-ios-email-outline"></i>
+        意见反馈 <span class="balanced"></span>
+      </div>
+      <div id="btnShare" class="item item-icon-left">
+        <i class="icon ion-ios-paperplane-outline"></i>
+        分享给好友
+      </div>
+      <div class="item item-icon-left" ng-click="">
+        <i class="icon ion-ios-people-outline"></i>
+
+      </div>
+
+      <div class="item item-icon-left" ng-click="showInfo()">
+        <i class="icon ion-ios-information-outline"></i>
+        关于
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

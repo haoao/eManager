@@ -1,0 +1,89 @@
+<ion-view view-title="任务详情">
+    <ion-nav-buttons side="right">
+        <a class="button button-clear " ng-click=""><i class="icon ion-thumbsup"></i></a>
+        <a class="button button-clear " ng-click=""><i class="icon ion-ios-more"></i></a>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="left" >
+        <a class="button button-clear" ui-sref="tab.inbox"><i class="icon ion-ios-arrow-left"></i>动态</a>
+    </ion-nav-buttons>
+    <ion-content class="no-padding">
+        <div class="list">
+            <div class="item item-divider item-icon-right">
+                示例项目，示例项目分组，未完成
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+            <div class="item item-checkbox" >
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                2015年5月部门工作任务
+            </div>
+
+            <div class="item item-divider">信息</div>
+            <div class="item item-avatar item-icon-right ">
+                <img ng-src="img/IMG_3872.JPG" width="44" height="44"/>
+                浩哥
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right ">
+                <i class="icon ion-ios-calendar-outline"></i>
+                5月20日
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+
+            <div class="item item-divider">更多</div>
+            <div class="item item-icon-left item-icon-right" ng-click="">
+                <i class="icon ion-ios-paper-outline"></i>
+                添加备注
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right">
+                <i class="icon ion-ios-list-outline"></i>
+                <p>完成产品的设计研发工作--小张</p>
+                <p>准备现产品推广资料--小张</p>
+                <p>确保新产品按时推出--小李</p>
+                <p>与市场部协商新产品发布会事宜--小李</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right" ng-click="">
+                <i class="icon ion-ios-circle-outline"></i>
+                普通
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right" ng-click="showInfo()">
+                <i class="icon ion-ios-timer-outline"></i>
+                设置重复周期
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+
+            <div class="item item-divider">参与者</div>
+            <div class="item item-icon-left item-icon-right ">
+                <i class="icon ion-ios-people-outline"></i>
+                浩哥，小张，小刘，小李
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+
+            <div class="item item-divider">评论</div>
+            <div class="list">
+                <div class="item item-avatar item-icon-right ">
+                    <img ng-src="img/39784_large.jpg" />
+                    <p>小张 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5月4日</p>
+                    <H2>收到，正在计划进行</h2>
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+                <div class="item item-avatar item-icon-right ">
+                    <img ng-src="img/40182_large.jpg" />
+                    <p>小刘 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5月4日</p>
+                    <H2>好的，下周定稿然后开展后续工作</h2>
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+                <div class="item item-avatar item-icon-right ">
+                    <img ng-src="img/24767_large.jpg" />
+                    <p>小李 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5月4日</p>
+                    <H2>好的，市场部王经理表示全力配合</h2>
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

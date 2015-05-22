@@ -1,0 +1,41 @@
+<ion-view view-title="仪表盘">
+    <ion-nav-buttons side="left">
+        <a class="button button-clear" ui-sref="tab.work-crmList"><i class="icon ion-ios-arrow-left"></i>CRM</a>
+    </ion-nav-buttons>
+    <ion-content>
+    <canvas id="line" class="chart chart-line" data="lineData"
+            labels="lineLabels" legend="true" series="lineSeries"
+            click="onClick">
+    </canvas>
+
+    <canvas id="bar" class="chart chart-bar" data="barData" labels="barLabels"></canvas>
+
+    <canvas id="doughnut" class="chart chart-doughnut" data="doughnutData" labels="doughnutLabels"></canvas>
+
+    <canvas id="radar" class="chart chart-radar" data="radarData" labels="radarLabels"></canvas>
+
+    <canvas id="pie" class="chart chart-pie" data="pieData" labels="pieLabels"></canvas>
+
+    <canvas id="polar-area" class="chart chart-polar-area" data="paData" labels="paLabels"></canvas>
+
+
+    <!--
+    <ion-list>
+      <div ng-repeat="group in groups">
+        <ion-item class="item-stable"
+                  ng-click="toggleGroup(group)"
+                  ng-class="{active: isGroupShown(group)}">
+          <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+          &nbsp;
+          Group {{group.name}}
+        </ion-item>
+        <ion-item class="item-accordion"
+                  ng-repeat="item in group.items"
+                  ng-show="isGroupShown(group)">
+          {{item}}
+        </ion-item>
+      </div>
+    </ion-list>
+    -->
+  </ion-content>
+</ion-view>

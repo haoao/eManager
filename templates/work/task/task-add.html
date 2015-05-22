@@ -1,0 +1,58 @@
+<ion-view view-title="新任务">
+    <ion-nav-buttons side="right">
+        <a class="button button-clear" ng-click="">完成</a>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="left" >
+        <a class="button button-clear" ui-sref="tab.work-taskList">取消</a>
+    </ion-nav-buttons>
+    <ion-content class="no-padding">
+        <div class="list">
+            <div class="item item-divider item-icon-right">
+                示例项目，示例项目分组，未完成
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+            <label class="item item-input">
+                <textarea placeholder="任务标题" class=""></textarea>
+            </label>
+            <div class="item item-icon-left item-icon-right ">
+                <i class="icon ion-ios-body-outline"></i>
+                设置一个执行者
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right ">
+                <i class="icon ion-ios-calendar-outline"></i>
+                设置截止日期
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+
+            <div class="item item-divider">参与者</div>
+            <div class="item item-icon-left item-icon-right ">
+                <i class="icon ion-ios-people-outline"></i>
+                冯浩
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+
+            <div class="item item-divider">更多</div>
+            <div class="item item-icon-left item-icon-right" ng-click="">
+                <i class="icon ion-ios-paper-outline"></i>
+                添加备注
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right">
+                <i class="icon ion-ios-list-outline"></i>
+                添加子任务
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right" ng-click="">
+                <i class="icon ion-ios-circle-outline"></i>
+                普通
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right" ng-click="showInfo()">
+                <i class="icon ion-ios-timer-outline"></i>
+                设置重复周期
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

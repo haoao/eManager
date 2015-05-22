@@ -1,0 +1,36 @@
+<ion-view view-title="项目列表">
+    <ion-nav-buttons side="right">
+        <a class="button button-clear" ui-sref="tab.work-projectAdd"><i class="icon ion-plus-round"></i></a>
+    </ion-nav-buttons>
+    <!--<ion-nav-buttons side="left">
+        <a class="button button-clear" ui-sref="tab.work"><i class="icon ion-ios-arrow-left"></i>工作台</a>
+    </ion-nav-buttons>-->
+    <ion-content>
+        <ion-refresher on-refresh="doRefresh()"
+                       pulling-text="下拉刷新..."
+                       refreshing-text="正在加载..."
+                       refreshing-icon="ion-loading-b">
+
+        </ion-refresher>
+        <ion-list type="inset-list" ng-init="load()">
+            <ion-item collection-repeat="project in projects" ui-sref="tab.work-projectDetail" class="item-icon-right">
+                {{project}}
+                <i class="icon ion-chevron-right icon-accessory"></i>
+                <ion-option-button class="button-calm">...</ion-option-button>
+                <ion-option-button class="button-energized icon ion-star"></ion-option-button>
+            </ion-item>
+        </ion-list>
+        <!--上拉更多 ng-if="moreDataCanBeLoaded()"
+        <ion-infinite-scroll
+                icon="ion-loading-b"
+                ng-if="moreDataCanBeLoaded()"
+                on-infinite="loadMore()"
+                distance="10%">
+        </ion-infinite-scroll>-->
+        <ion-infinite-scroll
+                ng-if="moreDataCanBeLoaded()"
+                icon="ion-loading-b"
+                on-infinite="loadMore()">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

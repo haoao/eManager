@@ -1,0 +1,24 @@
+<ion-view view-title="分享墙">
+    <ion-nav-buttons side="right">
+        <a class="button button-clear" ui-sref="tab.work-shareAdd"><i class="icon ion-ios-compose-outline"></i></a>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="left">
+        <a class="button button-clear" ui-sref="tab.work"><i class="icon ion-ios-arrow-left"></i>工作台</a>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="share in shares" type="item-text-wrap"
+                      href="#/tab/inbox/{{share.id}}">
+                <img ng-src="{{share.face}}">
+                <p>{{share.name}}</p>
+                <H2>{{share.lastText}}</h2>
+                <p>{{share.detail}}</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+
+                <ion-option-button class="button-assertive" ng-click="remove(share)">
+                    删除
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

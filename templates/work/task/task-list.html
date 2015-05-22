@@ -1,0 +1,38 @@
+<ion-view view-title="任务列表">
+    <ion-nav-buttons side="right">
+        <a class="button button-clear" ui-sref="tab.work-taskAdd"><i class="icon ion-plus-round"></i></a>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="left">
+        <a class="button button-clear" ui-sref="tab.work"><i class="icon ion-ios-arrow-left"></i>工作台</a>
+    </ion-nav-buttons>
+    <ion-content class="no-padding">
+        <div class="list">
+            <div class="item item-divider">未完成</div>
+            <div class="item item-checkbox item-avatar" >
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                <img ng-src="img/IMG_3872.JPG" width="44" height="44"/>
+                2015年部门工作任务
+            </div>
+
+            <div class="item item-divider">进行中</div>
+            <div class="item item-checkbox item-avatar" >
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                <img ng-src="img/IMG_3872.JPG" width="44" height="44"/>
+                这是一条任务
+            </div>
+
+            <div class="item item-divider">已完成</div>
+            <div class="item item-checkbox item-avatar" >
+                <label class="checkbox">
+                    <input type="checkbox" checked>
+                </label>
+                <img ng-src="img/IMG_3872.JPG" width="44" height="44"/>
+                这是一条任务
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
