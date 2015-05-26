@@ -271,6 +271,46 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
       }
     }
   })
+
+  .state('tab.work-crmSchd', {
+    url: '/work-crmSchd',
+    views: {
+      'tab-work': {
+        templateUrl: "templates/work/crm/crm-schd.html",
+        controller: ''
+      }
+    }
+  })
+
+  .state('tab.work-crmSchdAdd', {
+    url: '/work-crmSchdAdd',
+    views: {
+      'tab-work': {
+        templateUrl: "templates/work/crm/crm-schd-add.html",
+        controller: ''
+      }
+    }
+  })
+
+  .state('tab.work-crmSchdDetail', {
+    url: '/work-crmSchdDetail',
+    views: {
+      'tab-work': {
+        templateUrl: "templates/work/crm/crm-schd-detail.html",
+        controller: ''
+      }
+    }
+  })
+
+  .state('tab.work-oaOutDetail', {
+    url: '/work-oaOutDetail',
+    views: {
+      'tab-work': {
+        templateUrl: "templates/work/oa/oa-out-detail.html",
+        controller: ''
+      }
+    }
+  })
   ;
 
   // if none of the above states are matched, use this as the fallback

@@ -3,27 +3,50 @@
         <a class="button button-clear" ng-click="">保存</a>
     </ion-nav-buttons>
     <ion-nav-buttons side="left" >
-        <a class="button button-clear" ui-sref="tab.work-crmList">取消</a>
+        <a class="button button-clear" ui-sref="tab.work-crmSchd">取消</a>
     </ion-nav-buttons>
     <ion-content class="no-padding">
         <div class="list">
             <div class="item item-divider">基本信息</div>
-            <div class="item item-input ">
-                <input type="text" placeholder="活动名称">
+            <div class="item-input">
+                <span class="input-label">活动名称</span>
+                <input type="text" placeholder="必填">
             </div>
 
             <div class="item item-divider">计划信息</div>
-            <div class="item item-input ">
-                <input type="text" placeholder="开始日期">
-                <input type="text" placeholder="结束日期">
+            <div class="item-input">
+                <span class="input-label">开始日期</span>
+                <input type="date" placeholder="必填">
+            </div>
+            <div class="item-input">
+                <span class="input-label">结束日期</span>
+                <input  type="date" placeholder="必填">
+            </div>
+
+            <div class="item item-divider">其他信息</div>
+            <div class="item-input item-icon-right">
+                <span class="input-label">关联项</span>
+                <i class="icon">
+                    <span class="item-note item-icon-right">
+                        线索
+                        <i class="icon ion-chevron-right icon-accessory"></i>
+                    </span>
+                </i>
             </div>
 
             <div class="item item-divider">数据权限</div>
-            <div class="item item-input ">
-                <input type="text" placeholder="所属部门">
+            <div class="item-input item-icon-right">
+                    <span class="input-label">所属部门</span>
+                    <i class="icon">
+                        <span class="item-note item-icon-right">
+                            全公司
+                            <i class="icon ion-chevron-right icon-accessory"></i>
+                        </span>
+                    </i>
+                </div>
             </div>
 
-            <div class="item item-input ">
+            <div class="item item-input " align="center">
                 <a><i class="icon ion-plus-round"></i>添加更多</a>
             </div>
 

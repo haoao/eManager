@@ -1,10 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<ion-view view-title="市场活动">
+    <ion-nav-buttons side="left">
+        <a class="button button-clear" ui-sref="tab.work-projectList"><i class="icon ion-ios-arrow-left"></i>项目列表</a>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list card">
+            <div class="item item-body" >
+                <ion-slide-box does-continue="true" show-pager="true" auto-play="false" active-slide="index">
+                    <ion-slide>
+                        <h2>推广</h2>
+                        <p>活动日期：2015-05-26 至 2015-05-31</p>
+                        <p>活动状态：已计划</p>
+                    </ion-slide>
+                    <ion-slide>
+                        <h2>团队成员</h2>
+                        <p><img ng-src="img/IMG_3872.JPG" width="50" height="50">
+                            <i class="icon ion-chevron-right icon-accessory"></i>
+                        </p>
 
-</body>
-</html>
+
+                    </ion-slide>
+                </ion-slide-box>
+            </div>
+            <div class="item item-body" >
+
+                    <div class="row">
+                        <div class="col">11</div>
+                        <div class="col">22</div>
+                        <div class="col">33</div>
+                        <div class="col">44</div>
+                    </div>
+
+            </div>
+            <div class="item item-body">
+                <div class="tabs">
+                    <a class="tab-item">跟进记录</a>
+                    <a class="tab-item">详细资料</a>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
