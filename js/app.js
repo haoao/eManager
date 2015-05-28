@@ -5,8 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'chart.js', 'ionic.contrib.frostedGlass'])
-
+var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'chart.js', 'ionic.contrib.frostedGlass','ionic.ion.autoListDivider'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -21,6 +20,7 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
     }
   });
 })
+
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
     $ionicConfigProvider.platform.ios.tabs.style('standard');
     $ionicConfigProvider.platform.ios.tabs.position('bottom');
@@ -308,6 +308,26 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
       'tab-work': {
         templateUrl: "templates/work/oa/oa-out-detail.html",
         controller: ''
+      }
+    }
+  })
+
+  .state('tab.work-folderList', {
+    url: '/work-folderList',
+    views: {
+      'tab-work': {
+        templateUrl: "templates/work/folder/folder-list.html",
+        controller: 'FolderCtrl'
+      }
+    }
+  })
+
+  .state('tab.work-crmContact', {
+    url: '/work-crmContact',
+    views: {
+      'tab-work': {
+        templateUrl: "templates/work/crm/crm-contact.html",
+        controller: 'ContactCtrl'
       }
     }
   })

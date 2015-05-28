@@ -1,6 +1,9 @@
 <ion-view view-title="市场活动">
     <ion-nav-buttons side="left">
-        <a class="button button-clear" ui-sref="tab.work-projectList"><i class="icon ion-ios-arrow-left"></i>项目列表</a>
+        <a class="button button-clear" ui-sref="tab.work-crmSchd"><i class="icon ion-ios-arrow-left"></i>全部市场活动</a>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <a class="button button-clear" ng-click=""><i class="icon ion-ios-more"></i></a>
     </ion-nav-buttons>
     <ion-content>
         <div class="list card">
@@ -13,7 +16,7 @@
                     </ion-slide>
                     <ion-slide>
                         <h2>团队成员</h2>
-                        <p><img ng-src="img/IMG_3872.JPG" width="50" height="50">
+                        <p><img ng-src="img/IMG_3872.JPG" width="44" height="44">
                             <i class="icon ion-chevron-right icon-accessory"></i>
                         </p>
 
@@ -24,19 +27,79 @@
             <div class="item item-body" >
 
                     <div class="row">
-                        <div class="col">11</div>
-                        <div class="col">22</div>
-                        <div class="col">33</div>
-                        <div class="col">44</div>
+                        <div class="col-25 text-center" ui-sref="tab.work-crmXsxs">
+                            <p>1</p>
+                            <p>销售线索</p>
+                        </div>
+                        <div class="col-25 text-center">
+                            <p>0</p>
+                            <p>日程任务</p>
+                        </div>
+                        <div class="col-25 text-center">
+                            <p>0</p>
+                            <p>审批</p>
+                        </div>
+                        <div class="col-25 text-center">
+                            <p>0</p>
+                            <p>文档</p>
+                        </div>
                     </div>
 
             </div>
-            <div class="item item-body">
-                <div class="tabs">
-                    <a class="tab-item">跟进记录</a>
-                    <a class="tab-item">详细资料</a>
+            <div class="">
+                <div class="row text-center">
+                    <a class="button button-stable  col-50">跟进记录</a>
+                    <a class="button button-stable button-clear col-50">详细资料</a>
+                </div>
+                <div class="list card">
+                    <div class="item item-divider item-icon-left item-icon-right">
+                        <i class="icon icon-accessory">05-26 </i>
+                        <i class="icon icon-accessory">10:00</i>
+                    </div>
+                    <div class="item item-body">
+                        <div class="row">
+                            <div class="col-80">
+                                <div class="row">
+                                    <img ng-src="img/24767_large.jpg" width="44" height="44">
+                                    <h2>&nbsp;&nbsp;&nbsp;&nbsp;小李</h2>
+                                </div>
+                            </div>
+                           <div class="col-10"><i class="icon ion-ios-chatboxes positive"><span style="margin-left: 5px">1</span></i></div>
+                        </div>
+                        <div class="row">
+                            <p>全部准备完毕</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="list card">
+                    <div class="item item-divider item-icon-left item-icon-right">
+                        <i class="icon icon-accessory">今天 </i>
+                        <i class="icon icon-accessory">10:18</i>
+                    </div>
+                    <div class="item item-body">
+                        <div class="row">
+                            <div class="col-80">
+                                <div class="row">
+                                    <img ng-src="img/IMG_3872.JPG" width="44" height="44">
+                                    <h2>&nbsp;&nbsp;&nbsp;&nbsp;浩哥</h2>
+                                </div>
+                            </div>
+                            <div class="col-10"><i class="icon ion-ios-chatboxes-outline"><span style="margin-left: 5px">1</span></i></div>
+                        </div>
+                        <div class="row">
+                            <p>按计划进行中</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </ion-content>
+    <ion-footer-bar >
+        <div class="row">
+            <a class="button button-clear icon ion-clipboard col-10"></a>
+            <a class="button button-clear icon ion-image col-10"></a>
+            <input type="text" class="col-offset-10" placeholder="快速记录">
+            <a class="button button-clear icon ion-ios-mic-outline col-offset-50"></a>
+        </div>
+    </ion-footer-bar>
 </ion-view>

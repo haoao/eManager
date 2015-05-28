@@ -1,13 +1,20 @@
 <ion-view view-title="全部市场活动">
     <ion-nav-buttons side="right">
+        <a class="button button-clear" ><i class="icon ion-ios-search-strong"></i></a>
         <a class="button button-clear" ui-sref="tab.work-crmSchdAdd"><i class="icon ion-plus-round"></i></a>
     </ion-nav-buttons>
     <ion-nav-buttons side="left">
         <a class="button button-clear" ui-sref="tab.work-crmList"><i class="icon ion-ios-arrow-left"></i>CRM</a>
     </ion-nav-buttons>
     <ion-content class="no-padding">
+        <div class="row">
+            <a class="button button-stable  col-50">最近活动记录<i class="icon ion-ios-arrow-down"></i></a>
+            <a class="button button-stable  col-50">筛选<i class="icon ion-ios-arrow-down"></i></a>
+        </div>
         <ion-item class="item-icon-right" ui-sref="tab.work-crmSchdDetail">
-            推广
+            <h2>推广</h2>
+            <p>已计划</p>
+            <p>浩哥创建于 2015-05-10</p>
             <i class="icon ion-chevron-right icon-accessory"></i>
         </ion-item>
     </ion-content>

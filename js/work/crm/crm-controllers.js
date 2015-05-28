@@ -80,3 +80,28 @@ appCtrls.controller('CrmCtrl', function($scope, $ionicActionSheet) {
         });
     }
 })
+
+appCtrls.controller('ContactCtrl', function($scope, $timeout, PersonService) {
+    $scope.items = [];
+
+    PersonService.GetFeed().then(function(items) {
+        items.sort(function(a, b) {
+            var textA = a.user.name.first.toUpperCase();
+            var textB = b.user.name.first.toUpperCase();
+            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+        })
+
+        /*
+         items.sort(function(a,b){
+         var textA = a.user.gender.toUpperCase();
+         var textB = b.user.gender.toUpperCase();
+         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+         })*/
+
+        $scope.dividerFunction = function(key) {
+            return key;
+        }
+
+        $scope.items = items;
+    });
+})
