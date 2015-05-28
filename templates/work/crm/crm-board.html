@@ -3,21 +3,34 @@
         <a class="button button-clear" ui-sref="tab.work-crmList"><i class="icon ion-ios-arrow-left"></i>CRM</a>
     </ion-nav-buttons>
     <ion-content>
-    <canvas id="line" class="chart chart-line" data="lineData"
-            labels="lineLabels" legend="true" series="lineSeries"
-            click="onClick">
-    </canvas>
 
-    <canvas id="bar" class="chart chart-bar" data="barData" labels="barLabels"></canvas>
+    <div class="item item-divider">电话量</div>
+    <div class="item">
+        <canvas id="line" class="chart chart-line" data="lineData"
+                labels="lineLabels" legend="true" series="lineSeries"
+                click="onClick">
+        </canvas>
+    </div>
 
+    <div class="item item-divider">拜访量</div>
+    <div class="item">
+        <canvas id="bar" class="chart chart-bar" data="barData" labels="barLabels"></canvas>
+    </div>
+
+    <!--
     <canvas id="doughnut" class="chart chart-doughnut" data="doughnutData" labels="doughnutLabels"></canvas>
 
     <canvas id="radar" class="chart chart-radar" data="radarData" labels="radarLabels"></canvas>
+    -->
+    <div class="item item-divider">业绩统计</div>
+    <div class="item">
+        <canvas id="pie" class="chart chart-pie" data="pieData" labels="pieLabels"></canvas>
+    </div>
 
-    <canvas id="pie" class="chart chart-pie" data="pieData" labels="pieLabels"></canvas>
-
-    <canvas id="polar-area" class="chart chart-polar-area" data="paData" labels="paLabels"></canvas>
-
+    <div class="item item-divider">重点商机</div>
+    <div class="item">
+        <canvas id="polar-area" class="chart chart-polar-area" data="paData" labels="paLabels"></canvas>
+    </div>
 
     <!--
     <ion-list>

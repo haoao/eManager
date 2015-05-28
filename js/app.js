@@ -297,7 +297,7 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
     views: {
       'tab-work': {
         templateUrl: "templates/work/crm/crm-schd-detail.html",
-        controller: ''
+        controller: 'SchdCtrl'
       }
     }
   })

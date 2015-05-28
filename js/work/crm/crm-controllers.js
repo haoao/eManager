@@ -2,8 +2,8 @@ appCtrls.controller('CrmCtrl', function($scope, $ionicActionSheet) {
     $scope.pieLabels = ["Download Sales", "In-Store Sales", "Mail-Order Sales"];
     $scope.pieData = [300, 500, 100];
 
-    $scope.lineLabels = ["January", "February", "March", "April", "May", "June", "July"];
-    $scope.lineSeries = ['Series A', 'Series B'];
+    $scope.lineLabels = ["一月", "二月", "三月", "四月", "五月", "六月", "七月"];
+    $scope.lineSeries = ['小张', '小李'];
     $scope.lineData = [
         [65, 59, 80, 81, 56, 55, 40],
         [28, 48, 40, 19, 86, 27, 90]
@@ -12,8 +12,8 @@ appCtrls.controller('CrmCtrl', function($scope, $ionicActionSheet) {
         console.log(points, evt);
     };
 
-    $scope.barLabels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
-    $scope.barSeries = ['Series A', 'Series B'];
+    $scope.barLabels = ["一月", "二月", "三月", "四月", "五月", "六月", "七月"];
+    $scope.barSeries = ['小张', '小李'];
 
     $scope.barData = [
         [65, 59, 80, 81, 56, 55, 40],
@@ -104,4 +104,29 @@ appCtrls.controller('ContactCtrl', function($scope, $timeout, PersonService) {
 
         $scope.items = items;
     });
+})
+
+appCtrls.controller('SchdCtrl',function($scope, $ionicActionSheet) {
+    $scope.schdMore = function() {
+
+        // Show the action sheet
+        var hideSheet = $ionicActionSheet.show({
+            titleText: "",
+            buttons: [
+                { text: "分享到联系人" },
+                { text: "分享到工作圈" }
+            ],
+            buttonClicked: function(index) {
+                return true;
+            },
+            cancelText: "取消",
+            cancel: function() {
+                // add cancel code..
+            }
+            /*,
+             destructiveText: "删除",
+             destructiveButtonClicked:function(){
+             }*/
+        });
+    };
 })
