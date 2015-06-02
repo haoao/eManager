@@ -82,28 +82,9 @@ appCtrls.controller('CrmCtrl', function($scope, $ionicActionSheet) {
 })
 
 appCtrls.controller('ContactCtrl', function($scope, $timeout, PersonService) {
-    $scope.items = [];
+    $scope.items = [{"user":{"gender":"female","name":{"title":"mrs","first":"ava","last":"hoffman"},"location":{"street":"3987 park road","city":"exeter","state":"berkshire","postcode":"CI5P 3BB"},"email":"ava.hoffman30@example.com","username":"smallostrich534","password":"ramses","salt":"eU3XcP3T","md5":"06254d3e648f75ab73ec2ed035af89f9","sha1":"38685aba0a228f3d3d914c976140584d6936e9a9","sha256":"6161930ae840feb5eadd37fe7fb4354704214a9da7e41bce277efdd35c74e13c","registered":"1378179821","dob":"956494252","phone":"017683 06095","cell":"0709-030-050","NINO":"BT 31 46 94 N","picture":{"large":"http://api.randomuser.me/portraits/women/46.jpg","medium":"http://api.randomuser.me/portraits/med/women/46.jpg","thumbnail":"http://api.randomuser.me/portraits/thumb/women/46.jpg"},"version":"0.6","nationality":"GB"},"seed":"a1fedaf5df6a709204"}]
 
-    PersonService.GetFeed().then(function(items) {
-        items.sort(function(a, b) {
-            var textA = a.user.name.first.toUpperCase();
-            var textB = b.user.name.first.toUpperCase();
-            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-        })
-
-        /*
-         items.sort(function(a,b){
-         var textA = a.user.gender.toUpperCase();
-         var textB = b.user.gender.toUpperCase();
-         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-         })*/
-
-        $scope.dividerFunction = function(key) {
-            return key;
-        }
-
-        $scope.items = items;
-    });
+    PersonService.GetFeed( $scope.items);
 })
 
 appCtrls.controller('SchdCtrl',function($scope, $ionicActionSheet) {

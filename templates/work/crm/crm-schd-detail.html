@@ -6,7 +6,7 @@
         <a class="button button-clear" ng-click="schdMore()"><i class="icon ion-ios-more"></i></a>
     </ion-nav-buttons>
     <ion-content>
-        <div class="list card">
+        <div class="list ">
             <div class=" item-body" >
                 <ion-slide-box does-continue="true" show-pager="true" auto-play="false" active-slide="index">
                     <ion-slide>
@@ -46,16 +46,16 @@
             </div>
             <div class="">
                 <div class="row text-center">
-                    <a class="button button-stable  col-50">跟进记录</a>
+                    <a class="button button-stable button-clear  col-50"><b>跟进记录</b></a>
                     <a class="button button-stable button-clear col-50">详细资料</a>
                 </div>
-                <div class="list card">
-                    <div class="item item-divider item-icon-left item-icon-right">
+                <div class="list ">
+                    <div class="item item-clear item-icon-left item-icon-right">
                         <i class="icon icon-accessory">05-26 </i>
                         <i class="icon icon-accessory">10:00</i>
                     </div>
                     <div class="item item-body">
-                        <div class="row">
+                        <div class="row row-center">
                             <div class="col-80">
                                 <div class="row">
                                     <img ng-src="img/24767_large.jpg" width="44" height="44">
@@ -69,13 +69,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="list card">
-                    <div class="item item-divider item-icon-left item-icon-right">
+                <div class="list ">
+                    <div class="item item-clear item-icon-left item-icon-right">
                         <i class="icon icon-accessory">今天 </i>
                         <i class="icon icon-accessory">10:18</i>
                     </div>
                     <div class="item item-body">
-                        <div class="row">
+                        <div class="row row-center">
                             <div class="col-80">
                                 <div class="row">
                                     <img ng-src="img/IMG_3872.JPG" width="44" height="44">
@@ -93,11 +93,16 @@
         </div>
     </ion-content>
     <ion-footer-bar >
-        <div class="row">
-            <a class="button button-clear icon ion-clipboard col-10"></a>
-            <a class="button button-clear icon ion-image col-10"></a>
+        <!--<div class="row">-->
+            <!--<a class="button button-clear icon ion-clipboard col-10"></a>-->
+            <!--<a class="button button-clear icon ion-image col-10"></a>-->
+            <!--<input type="text" class="col-offset-10" placeholder="快速记录">-->
+            <!--<a class="button button-clear icon ion-ios-mic-outline col-offset-34"></a>-->
+        <!--</div>-->
+        <div class="row  row-center">
+            <a class="button button-clear icon ion-android-attach"></a>
             <input type="text" class="col-offset-10" placeholder="快速记录">
-            <a class="button button-clear icon ion-ios-mic-outline col-offset-34"></a>
+            <a class="buttun buttun-clear col-offset-34">发送</a>
         </div>
     </ion-footer-bar>
 </ion-view>
