@@ -1,16 +1,17 @@
 /* Empty. Add your own CSS if you like*/
-.col{
+
+#wk .col{
     margin:5px;
     height:85px;
     text-align:center;
     line-height:32px;
 }
-.col.light div{
+#wk .col.light div{
     text-align:left;
 }
-.col .icon{
+#wk .col .icon{
     font-size:32px;
 }
-.ion-slide{
+#wk .ion-slide{
     text-align:center;
 }
