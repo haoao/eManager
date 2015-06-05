@@ -1,5 +1,7 @@
 /* Empty. Add your own CSS if you like*/
-
+.date {
+    float: right;
+}
 #wk .col{
     margin:5px;
     height:85px;

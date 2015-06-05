@@ -23,7 +23,7 @@
                 </ion-slide-box>
             </div>
             <div class="item" >
-                <div class="row">
+                <div class="row row-no-padding">
                     <div class="col col-25 text-center" ui-sref="tab.work-crmXsxs">
                         <p>1</p>
                         <p>销售线索</p>
@@ -68,13 +68,13 @@
                     <!--</div>-->
                     <div class="item item-avatar item-icon-right ">
                         <img ng-src="img/24767_large.jpg" />
-                        <p>小李 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;05-26 10:00</p>
+                        <p>小李<span class="date">05-26 10:00</span></p>
                         <H2>全部准备完毕</h2>
                         <i class="icon ion-chevron-right icon-accessory"></i>
                     </div>
                     <div class="item item-avatar item-icon-right ">
-                        <img ng-src="img/IMG_3872.jpg" />
-                        <p>浩哥 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天 11:00</p>
+                        <img ng-src="img/IMG_3872.JPG">
+                        <p>浩哥<span class="date">今天 11:00</span></p>
                         <H2>按计划进行中</h2>
                         <i class="icon ion-chevron-right icon-accessory"></i>
                     </div>
@@ -102,17 +102,14 @@
             </div>
         </div>
     </ion-content>
-    <ion-footer-bar >
-        <!--<div class="row">-->
-            <!--<a class="button button-clear icon ion-clipboard col-10"></a>-->
-            <!--<a class="button button-clear icon ion-image col-10"></a>-->
-            <!--<input type="text" class="col-offset-10" placeholder="快速记录">-->
-            <!--<a class="button button-clear icon ion-ios-mic-outline col-offset-34"></a>-->
-        <!--</div>-->
-        <div class="row  row-center">
-            <a class="button button-clear icon ion-android-attach"></a>
-            <input type="text" class="col-offset-10" placeholder="快速记录">
-            <a class="buttun buttun-clear col-offset-34">发送</a>
-        </div>
+
+    <ion-footer-bar align-title="left" class="bar-light reply-new" keyboard-attach>
+        <a class="button button-clear icon ion-android-attach"></a>
+        <label class="item-input-wrapper">
+            <input type="text" placeholder="回复">
+        </label>
+        <button class="button button-small button-clear button-positive" ng-click="">
+            提交
+        </button>
     </ion-footer-bar>
 </ion-view>

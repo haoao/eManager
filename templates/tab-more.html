@@ -1,18 +1,26 @@
 <ion-view view-title="更多">
-  <ion-content class="no-padding">
+  <ion-content class="setting">
     <div class="list">
-      <div class="item item-divider">帐号</div>
+      <!--<div class="item item-divider">帐号</div>-->
 
-      <div class="item item-icon-left item-button-right" >
-        <i class="icon ion-ios-person"></i>
-        已登录
-        <button class="button button-positive" ng-click="">退出</button>
-      </div>
-      <div class="item item-icon-left item-button-right">
-        <i class="icon ion-ios-person-outline"></i>
-        暂未登录
-        <button class="button button-positive" ng-click="">登录</button>
-      </div>
+      <!--<div class="item item-icon-left item-button-right" >-->
+        <!--<i class="icon ion-ios-person"></i>-->
+        <!--已登录-->
+        <!--<button class="button button-clear button-positive" ng-click="">退出</button>-->
+      <!--</div>-->
+      <!--<div class="item item-icon-left item-button-right">-->
+        <!--<i class="icon ion-ios-person-outline"></i>-->
+        <!--暂未登录-->
+        <!--<button class="button button-clear button-positive" ng-click="">登录</button>-->
+      <!--</div>-->
+      <ion-item class="login" on-hold="onHoldLogin()" ng-click="">
+
+        <img src="img/commentfailure.png" class="avatar">
+        <br>
+        <br>
+
+        <p>立即登录</p>
+      </ion-item>
 
       <div class="item item-divider">功能（需要登录）</div>
       <div class="item">
@@ -21,17 +29,17 @@
       <div class="item item-icon-left item-button-right">
         <i class="icon ion-ios-cloud-upload-outline"></i>
         数据备份到云端
-        <button class="button button-positive" ng-click="">备份</button>
+        <button class="button button-clear button-positive" ng-click="">备份</button>
       </div>
       <div class="item item-icon-left item-button-right">
         <i class="icon ion-ios-cloud-download-outline"></i>
         从云端还原数据
-        <button class="button button-positive" ng-click="">还原</button>
+        <button class="button button-clear button-positive" ng-click="">还原</button>
       </div>
       <div class="item item-icon-left item-button-right">
         <i class="icon ion-ios-chatbubble-outline"></i>
         im
-        <button class="button button-positive" ng-click="goIm()">im</button>
+        <button class="button button-clear button-positive" ng-click="goIm()">im</button>
       </div>
 
       <div class="item item-divider">其他</div>
